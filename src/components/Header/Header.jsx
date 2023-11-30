@@ -8,7 +8,7 @@ function Header(){
 
 
     return(
-        /*este es el Header Completo*/
+
         <Stack
             className='class-header'
             p={[1,5]}
@@ -20,7 +20,6 @@ function Header(){
                 La Mia Bottiglia
             </Center>
 
-            {/*Este es el Flex Para el Menu*/}
             <Flex
                 flexDirection={['column','row']}
                 alignItems='center'

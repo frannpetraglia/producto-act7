@@ -3,9 +3,7 @@ import { useState } from 'react'
 import '../../App.css';
 import './Body.css';
 import '../../index.css'
-import { Grid, GridItem, FormControl, Input, FormLabel, FormErrorMessage, FormHelperText,
-         Button, IconButton, Stack, HStack, Flex, Center, Container, Image, Box, Spacer,
-        Collapse,} from '@chakra-ui/react';
+import { Input, Button, IconButton, Stack, Center, Container, Image, Box, Spacer, Collapse,} from '@chakra-ui/react';
 import { RiSearchLine } from "react-icons/ri";
 import { useDisclosure } from '@chakra-ui/react'
 import fernet_ladrillos from '../../assets/fernet_ladrillos.jpg'
@@ -44,11 +42,9 @@ function Body(){
                     }}
                 icon={<RiSearchLine />} />
             </Center>
-            {/* En este stack ordeno la foto, título y la descripcion */}
             <Container direction='column'>
                 <Image src={fernet_ladrillos}/>
                 <Box border='1px solid    #0b0601' >
-                    {/* Center con título*/} 
                     <Center size={['sm','lg']} backgroundColor="#d7ca91">
                         FERNET BRANCA CLASICO 750 cc
                     </Center>
@@ -123,35 +119,3 @@ function Body(){
 }
 
 export default Body;
-
-{/*
-        <Grid
-            templateAreas={`"header header"
-                            "nav main"
-                            "nav footer"`}
-            gridTemplateRows={'90px 1fr 30px'}
-            gridTemplateColumns={'150px 1fr'}
-            h='flex'
-            gap='1'
-            color='blackAlpha.700'
-            fontWeight='bold'
-            >
-            <GridItem pl='2' className="bodyy" area={'header'} >
-            <Stack id="buscador" mt={[0,1]} mb={[0,1]} p={[0,2]} direction="row" allignItems="center">                            
-                <Input type="text" size="flex" placeholder="Ingrese su producto" variant="filled"/>
-                    <Button size="sm"  >
-                        Buscar <RiSearchLine />
-                    </Button>
-            </Stack>   
-            </GridItem>
-            <GridItem pl='2' bg='pink.300' area={'nav'}>
-                Imagen
-            </GridItem>
-            <GridItem pl='2' bg='green.300' area={'main'}>
-                Info
-            </GridItem>
-            <GridItem pl='2' bg='blue.300' area={'footer'}>
-                Botones
-            </GridItem>
-        </Grid>
- */}
