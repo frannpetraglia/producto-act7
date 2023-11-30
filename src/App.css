@@ -1,0 +1,22 @@
+:root {
+  --color-bg-app: #e9dfb0;
+  --color-bg-header: #262831;
+  --color-primary: #00f9b6;
+  --color-primary-oscuro: #07bf8b;
+  --color-secondary: #7A7979;
+  --color-borders: #ccc;
+  --color-to-do: red;
+  background-color: #e9dfb0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 6.5rem);
+  
+
+}
+
+.bodyy{
+  background-color: var(--color-bg-app);
+}
