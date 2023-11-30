@@ -8,6 +8,7 @@ import { Grid, GridItem, FormControl, Input, FormLabel, FormErrorMessage, FormHe
         Collapse,} from '@chakra-ui/react';
 import { RiSearchLine } from "react-icons/ri";
 import { useDisclosure } from '@chakra-ui/react'
+import fernet_ladrillos from '../../assets/fernet_ladrillos.jpg'
 
 
 
@@ -45,7 +46,7 @@ function Body(){
             </Center>
             {/* En este stack ordeno la foto, título y la descripcion */}
             <Container direction='column'>
-                <Image src='./src/assets/fernet_ladrillos.jpg'/>
+                <Image src={fernet_ladrillos}/>
                 <Box border='1px solid    #0b0601' >
                     {/* Center con título*/} 
                     <Center size={['sm','lg']} backgroundColor="#d7ca91">
